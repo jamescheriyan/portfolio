@@ -2,6 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
@@ -29,24 +31,28 @@ section {
 }
 
 section h2 {
-    color: #333;
+    color: #3498db;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-ul li {
-    display: inline-block;
-    margin-right: 10px;
+.skill {
     background-color: #3498db;
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px 20px;
+    margin: 5px;
     border-radius: 5px;
 }
 
 .project {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
