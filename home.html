@@ -1,71 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Your Name - Data Analyst Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>James Cheriyan - AI Resume Assistant</title>
+  <script
+    type="module"
+    src="https://gradio.s3-us-west-2.amazonaws.com/5.34.0/gradio.js"
+  ></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #ffffff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .profile-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    p.subtitle {
+      margin: 0.5rem 0 2rem;
+      color: #555;
+      font-size: 1rem;
+    }
+
+    gradio-app {
+      width: 100%;
+      height: 700px;
+      border: none;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      gradio-app {
+        height: 650px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Your Name</h1>
-            <p>Data Analyst</p>
-        </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I am a passionate data analyst with expertise in...</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Data Analysis</li>
-                <li>Data Visualization</li>
-                <li>Statistical Analysis</li>
-                <li>SQL</li>
-                <!-- Add more skills as needed -->
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <p>Master of Science in Data Science, XYZ University, Year</p>
-            <p>Bachelor of Science in Statistics, ABC University, Year</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: linkedin.com/in/yourprofile</p>
-            <!-- Add more contact information as needed -->
-        </div>
-    </section>
+  <div class="container">
+    <img src="james.jpg" alt="James Cheriyan" class="profile-image" />
+    <h1>James Cheriyan</h1>
+    <p class="subtitle">Technical Support Specialist | AI-Powered Resume Assistant</p>
+    
+    <!-- Embedded Gradio App -->
+    <gradio-app src="https://jc047-jc-ai-assistant.hf.space"></gradio-app>
+  </div>
 
 </body>
 </html>
